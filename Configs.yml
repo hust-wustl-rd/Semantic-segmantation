@@ -6,8 +6,8 @@ data:
     val_split: val
     img_rows: 'same'
     img_cols: 'same'
-    path: /private/home/meetshah/datasets/VOC/060817/VOCdevkit/VOC2012/
-    sbd_path: /private/home/meetshah/datasets/VOC/benchmark_RELEASE/
+    path: 'D:/wustl/Course/2020 Spring/Data mining/Project/data/VOCtrainval_11-May-2012/VOCdevkit/VOC2012'
+    sbd_path: 'D:/wustl/Course/2020 Spring/Data mining/Project/data/benchmark_RELEASE'
 training:
     train_iters: 300000
     batch_size: 1
