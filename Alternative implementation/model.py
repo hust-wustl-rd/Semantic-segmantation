@@ -55,7 +55,7 @@ def unet(learning_rate,optimizer):
   outputs = Conv2D(1, (1, 1), activation='sigmoid') (c9)
 
   model = Model(inputs=[inputs], outputs=[outputs])
-  optimizerss = optimizer(lr=learning_rate)
+  optimizers = optimizer(lr=learning_rate)
   model.compile(loss='binary_crossentropy', optimizer=optimizerss, metrics=['accuracy'])
   return model
 
