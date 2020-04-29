@@ -1,0 +1,26 @@
+model:
+    arch: unet
+data:
+    dataset: pascal
+    train_split: train_aug
+    val_split: val
+    img_rows: 512
+    img_cols: 512
+    path: /content/VOCdevkit/VOC2012/
+    sbd_path: /content/benchmark_RELEASE/
+training:
+    train_iters: 300000
+    batch_size: 1
+    val_interval: 5000
+    n_workers: 16
+    print_interval: 50
+    optimizer:
+        name: 'sgd'
+        lr: 1.0e-3
+        weight_decay: 0.0005
+        momentum: 0.99
+    loss:
+        name: "cross_entropy"
+        size_average: False
+    lr_schedule:
+    resume: fcn8s_pascal_best_model.pkl
